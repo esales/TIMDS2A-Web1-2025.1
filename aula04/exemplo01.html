@@ -1,0 +1,116 @@
+<html>
+<head>
+
+    <style>
+        *{
+            color: blue;
+            background-color: moccasin;
+
+            font-size: 40px;
+        }
+
+        #textoPrincipal{
+            color:darkorange;
+            background-color: lightblue;
+        }
+
+        .corDeFundoLaranja{
+            background-color: orange;
+        }
+
+        .sublinhado{
+            text-decoration: underline;
+        }
+
+        .italico{
+            font-style: italic;
+        }
+
+        .negrito{
+            font-weight: bold;
+        }
+
+        [href="https://www.google.com"]{
+            color: red;
+        }
+
+        [teste="123"]{
+            color: green;
+        }
+
+        h1:hover{
+            font-size: 50px;
+            border: 1px solid black;
+        }
+
+        a:link{
+            color:salmon;
+        }
+
+        a:visited{
+            color:green;
+        }
+
+        a:hover{
+            color:darkorchid;
+        }
+
+        a:active{
+            color:chartreuse;
+        }
+
+        input{
+            background-color: white;
+        }
+
+        input:focus{
+            background-color: yellow;
+        }
+
+        p::first-letter{
+            font-size: 70px;
+            color: red;
+        }
+
+        /* li::before{
+            content: "prefixo - ";
+            color: green;   
+        }
+
+        li::after{
+            content: " - sufixo";
+            color: red;
+        } */
+
+        li:hover::after{
+            content: "\1F612"
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+
+    <input type="text">
+
+    <a href="https://www.google.com" target="_blank">Google</a>
+    <a href="https://www.youtube.com" target="_blank">Youtube</a>
+
+    <a href="https://www.cnn.com" target="_blank">CNN</a>
+    <h1>Texto do H1</h1>
+    <p id="textoPrincipal" class="corDeFundoLaranja">Parágrafo 1</p>
+   
+    <p teste="123">Parágrafo 2</p>
+   
+    <p class="sublinhado italico negrito" >Parágrafo 3</p>
+    <p class="negrito">Parágrafo 4</p>
+    <p class="sublinhado">Parágrafo 5</p>
+
+    
+</body>
+</html>
