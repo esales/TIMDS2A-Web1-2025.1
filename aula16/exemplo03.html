@@ -1,0 +1,80 @@
+<html>
+<head>
+    <title>Js</title>
+
+    <style>
+        .exemplo {
+            width: 100px;
+            height: 100px;
+            border: solid 1px black;
+        }
+
+        .exemplo2{
+            background-color: yellow;
+        }
+
+        .exemplo3 {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <p id="primeiro">Parágrafo 1</p>
+    <p class="teste">Parágrafo 2</p>
+    <a href="https://www.google.com">Link</a>
+    <input type="text" name="descricao">
+    <div class="exemplo3"></div>
+
+    <br><br>
+    <button onclick="mudarCor()">Botão 1</button>
+
+    <button onclick="variarDiv()">Mudar Div</button>
+
+    <script>
+        function funcao(){
+            let elemento = document.querySelector("p");
+
+            console.log(elemento);
+
+            let elementos = document.querySelectorAll("p");
+
+            console.log(elementos);
+        }
+
+        function mudarCor(){
+            let paragrafo = document.querySelector("#primeiro");
+
+            paragrafo.style.color = "white";
+            paragrafo.style.backgroundColor = "black";
+            paragrafo.style.fontSize = "50px";
+        }
+
+        function mudarDiv(){
+            let div = document.querySelector("div");
+
+            div.classList.remove("exemplo3");
+            div.classList.add("exemplo");
+            div.classList.add("exemplo2");
+
+            console.log(div.classList);
+        }
+
+        function variarDiv(){
+            let div = document.querySelector("div");
+
+            if (div.classList.contains("exemplo")) {
+                div.classList.remove("exemplo");
+                div.classList.remove("exemplo2");
+                div.classList.add("exemplo3");
+            } else {
+                div.classList.remove("exemplo3");
+                div.classList.add("exemplo");
+                div.classList.add("exemplo2");
+            }
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Eventos</title>
+</head>
+<body>
+    <input type="text">
+    <button id="botao">Clique</button>
+
+    <script>
+        let elemento = document.querySelector("#botao");
+
+        elemento.addEventListener("click", () => console.log('click'));
+        elemento.addEventListener("mousedown", () => console.log('mousedown'));
+        elemento.addEventListener("mouseup", () => console.log('mouseup'));
+        elemento.addEventListener("dblclick", () => console.log('dblclick'));
+        elemento.addEventListener("mouseover", () => console.log('mouseover'));
+        elemento.addEventListener("mouseout", () => console.log('mouseout'));
+    
+        elemento = document.querySelector("input");
+
+        // elemento.addEventListener('keydown', event => console.log(`keydown: ${event.key}`));
+        elemento.addEventListener('focus', () => console.log('focus'));
+        elemento.addEventListener('blur', () => console.log('blur'));
+
+    </script>
+</body>
+</html>

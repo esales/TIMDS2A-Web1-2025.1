@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>Js</title>
+</head>
+<body>
+    <p id="primeiro">Parágrafo 1</p>
+    <p class="teste">Parágrafo 2</p>
+    <a href="https://www.google.com">Link</a>
+    <input type="text" name="descricao">
+
+    <br><br>
+    <button onclick="funcao()">Botão 1</button>
+
+    <script>
+        function funcao(){
+            // let elemento = document.getElementById("primeiro");
+
+            let elemento = document.querySelector("p");
+
+            console.log(elemento);
+
+            let elementos = document.querySelectorAll("p");
+
+            console.log(elementos);
+        }
+    </script>
+</body>
+</html>

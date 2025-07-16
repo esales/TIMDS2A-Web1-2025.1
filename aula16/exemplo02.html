@@ -1,0 +1,54 @@
+<html>
+<head>
+    <title>Grid</title>
+
+    <style>
+        body{
+            margin: 0;
+            display: grid;
+            height: 100vh;
+
+            grid-template-rows: 2fr 5fr 1fr;
+            grid-template-columns: 1fr 7fr 2fr;
+            gap: 1vh;
+
+            grid-template-areas: 
+            "h h h"
+            "n m a"
+            "f f f";
+        }
+
+        header{
+            background-color: lightblue;
+            grid-area: h;
+        }
+
+        nav{
+            background-color: lightgreen;
+            grid-area: n;
+        }
+
+        main{
+            background-color: lightcoral;
+            grid-area: m;
+        }
+
+        aside{
+            background-color: lightgoldenrodyellow;
+            grid-area: a;
+        }
+        
+        footer{
+            background-color: lightgray;
+            grid-area: f;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <nav></nav>
+    <main></main>
+    <aside></aside>
+    <footer></footer>
+</body>
+</html>
