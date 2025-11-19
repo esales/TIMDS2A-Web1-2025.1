@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Listar Pessoas</title>
+</head>
+<body>
+    <h1>Listar pessoas</h1>
+    
+    <ul>
+        {{#each pessoas}}
+            <li>
+                <a href="/pessoas/{{id}}">{{nome}}</a>
+            </li>
+        {{/each}}
+    </ul>
+</body>
+</html>

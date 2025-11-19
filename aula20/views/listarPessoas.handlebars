@@ -1,0 +1,26 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Pessoas</title>
+</head>
+<body>
+  <h2>Lista de Pessoas</h2>
+
+  <ul>
+    {{#each pessoas}}
+      <li>
+        <a href="/pessoas/ver/{{id}}">{{nome}}</a>
+        <a href="/pessoas/{{id}}/editar">editar</a>
+
+        <form action="/pessoas/excluir/{{id}}" method="POST" style="display:inline;">
+          <button type="submit" onclick="return confirm('Confirma exclusão?')">
+            excluir
+          </button>
+        </form>
+      </li>
+    {{/each}}
+  </ul>
+
+  <a href="/">Voltar</a>
+</body>
+</html>
