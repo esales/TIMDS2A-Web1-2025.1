@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listar Consultas</title>
+</head>
+<body>
+    <a href="/consulta/novo">Cadastrar Consulta</a> - <a href="/">Voltar</a><br><br>
+    <h1>Listar Consultas</h1>
+    <ul>
+        {{#each consultas}}
+            <li>Hora: {{this.hora}}, Paciente: {{this.paciente.nome}}, Médico: {{this.medico.nome}} </li>
+        {{/each}}
+    </ul>
+</body>
+</html>

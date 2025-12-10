@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listar Médicos</title>
+</head>
+<body>
+    <a href="/medico/novo">Cadastrar Médico</a> - <a href="/">Voltar</a><br><br>
+    <h1>Lista de Médicos</h1>
+    <ul>
+        {{#each medicos}}
+            <li>{{this.nome}}</li>
+            {{#each this.especialidades}}
+                <ul>
+                    <li>{{this.descricao}}</li>
+                </ul>
+            {{/each}}
+        {{/each}}
+    </ul>
+</body>
+</html>

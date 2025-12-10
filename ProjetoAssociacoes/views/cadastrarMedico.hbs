@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Médico</title>
+</head>
+<body>
+    <h1>Cadastrar Médico</h1>
+    <form action="/medico" method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br>
+
+        <label for="especialidades">Especialidades:</label>
+        <select id="especialidades" name="especialidades" multiple required>
+            {{#each especialidades}}
+                <option value="{{this.id}}">{{this.descricao}}</option>
+            {{/each}}
+        </select><br><br>
+
+        <button type="submit">Cadastrar</button>
+        <a href="/medico">
+            <button type="button">Cancelar</button>
+        </a>
+    </form>
+</body>
+</html>

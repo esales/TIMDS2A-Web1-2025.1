@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listar Especialidades</title>
+</head>
+<body>
+    <a href="/especialidade/novo">Cadastrar Especialidade</a> - <a href="/">Voltar</a><br><br>
+    <h1>Lista de Especialidades</h1>
+    <ul>
+        {{#each especialidades}}
+            <li>{{this.descricao}}</li>
+        {{/each}}
+    </ul>
+</body>
+</html>

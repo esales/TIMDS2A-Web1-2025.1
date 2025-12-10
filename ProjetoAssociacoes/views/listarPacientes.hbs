@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listar Pacientes</title>
+</head>
+<body>
+    <a href="/paciente/novo">Cadastrar Paciente</a> - <a href="/">Voltar</a><br><br>
+    <h1>Lista de Pacientes</h1>
+    <ul>
+        {{#each pacientes}}
+            <li>{{this.nome}} - {{this.prontuario.descricao}}</li>
+
+        {{/each}}
+    </ul>
+</body>
+</html>

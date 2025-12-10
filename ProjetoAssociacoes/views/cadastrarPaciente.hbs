@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Paciente</title>
+</head>
+<body>
+    <h1>Cadastrar Paciente</h1>
+    <form action="/paciente" method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <h2>Prontuário</h2>
+        <label for="descricao">Descrição</label>
+        <input type="text" id="descricao" name="descricao" required><br><br>
+
+        <button type="submit">Cadastrar</button>
+        <a href="/paciente">
+            <button type="button">Cancelar</button>
+        </a>
+    </form>
+</body>
+</html>
